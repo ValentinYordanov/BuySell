@@ -1,1 +1,1 @@
-# BuySell
+# BuySell - trading platform
