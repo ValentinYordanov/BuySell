@@ -141,11 +141,10 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="row ml-4">
-                        <a href="message.html"><button type="button" class="btn-lg btn-success w-100">Изпращане на
-                                съобщение</button></a><span class="fa fa-star checked"></span>
+                    <div class="row ml-4" >
+                        <a href="message.html"><button type="button" class="btn-lg btn-success w-100">Изпрати съобщение</button></a><span class="fa fa-star checked"></span>
                     </div>
-                    <div class="row bootstrap snippets ml-4 mt-5    ">
+                    <div class="row bootstrap snippets ml-4 mt-5">
                         <div class="comment-wrapper">
                             <div class="panel panel-info">
                                 <div class="panel-heading">
@@ -153,32 +152,29 @@
                                 <div class="panel-body">
                                     <textarea class="form-control" placeholder="Напиши коментар.." rows="3"></textarea>
                                     <br>
-                                    <button type="button" class="btn btn-success pull-right">Post</button>
+                                    <button type="button" class="btn btn-success pull-right" id="postButton">Post</button>
                                     <div class="clearfix"></div>
                                     <hr>
-                                    <ul class="media-list">
-                                        <li class="media">
-                                            <div class="text-success">Antoan Nedelchev</div>
-                                            <p>
-                                                <br>
+                                    <div id="comment_section">
+                                        <div>
+                                            <div class="text-success">Antoan Nedelchev:</div>
+                                            <div class="comments">
                                                 Този ме измами с 300 лева
-                                            </p>
-                                        </li>
-                                        <li class="media">
-                                            <div class="text-success">IlterD</div>
-                                            <p>
-                                                <br>
-                                                Коректен търговец всичко мина по мед и масло
-                                            </p>
-                                        </li>
-                                        <li class="media">
-                                            <div class="text-success">Стоян Колев</div>
-                                            <p>
-                                                <br>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="text-success">IlterD:</div>
+                                            <div class="comments">
+                                                Коректен търговец, всичко мина по мед и масло
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="text-success">Стоян Колев:</div>
+                                            <div class="comments">
                                                 Много добра обява точно от това имах нужда
-                                            </p>
-                                        </li>
-                                    </ul>
+                                            </div>
+                                    </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>

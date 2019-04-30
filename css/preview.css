@@ -30,3 +30,16 @@
 #description {
     margin-top: 18%;
 }
+
+.text-success {
+    font-weight: bold;
+}
+
+.comments {
+    display: block;
+    margin: 3px 10px;
+}
+
+#postButton {
+    float: right;
+}
