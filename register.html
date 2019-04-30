@@ -11,7 +11,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Custom styles -->
-  <link href="sticky-footer.css" rel="stylesheet">
+  <link href="css/sticky-footer.css" rel="stylesheet">
 
   <title>Buy Sell - Регистрация</title>
 </head>
@@ -19,7 +19,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">
-      <img src="BuySellLogo.png" width="191" height="33" alt="" class="d-inline-block align-top">
+      <img src="img/BuySellLogo.png" width="191" height="33" alt="" class="d-inline-block align-top">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,6 +27,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="add_ad.html">Добавяне на обява</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="register.html">Регистрация</a>
         </li>
@@ -77,10 +80,10 @@
       <div class="row mt-5">
         <div class="col-4"></div>
         <form class="form-signin  col-4">
-          <input type="text" id="username" class="form-control mt-3" placeholder="Потребителско име" required>
+          <input type="text" id="username" class="form-control mt-3" placeholder="Потребителско име" required autofocus>
           <label for="inputPassword" class="sr-only">Password</label>
           <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control mt-3" placeholder="E-mail" required autofocus>
+          <input type="email" id="inputEmail" class="form-control mt-3" placeholder="E-mail" required>
           <label for="username" class="sr-only">Username</label>
           <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Парола" required>
           <label for="repeatPassword" class="sr-only">Password</label>

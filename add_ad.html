@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+
+        <!-- Custom styles -->
+        <link href="css/sticky-footer.css" rel="stylesheet">
+        <link href="css/add_ad.css" rel="stylesheet">
+
+        <title>Buy Sell - Добавяне на обява</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/BuySellLogo.png" width="191" height="33" alt=""
+                    class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="add_ad.html">Добавяне на обява</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Регистрация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div data-toggle="modal"
+                                data-target="#exampleModal">Влизане</div>
+                        </a>
+                    </li>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                        role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="exampleModalLabel">Вписване</h5>
+                                    <button type="button" class="close"
+                                        data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Имейл
+                                                адрес</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder="Имейл адрес">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Парола</label>
+                                            <input type="password"
+                                                class="form-control"
+                                                id="exampleInputPassword1"
+                                                placeholder="Парола">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="index.html"><button type="button"
+                                            class="btn btn-success">Вписване</button></a>
+                                    <button type="button" class="btn
+                                        btn-secondary" data-dismiss="modal">Затвори</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-7">
+                        <form class="form-signin" id="form1" runat="server">
+                            <input type="text" id="ad_name" class="form-control
+                                mt-4" placeholder="Име на обява" required
+                                autofocus>
+                            <input type="text" id="category" class="form-control
+                                mt-4" placeholder="Категория на обявата"
+                                required>
+                            <textarea rows="4" id="description"
+                                class="form-control
+                                mt-4" placeholder="Кратко описание на обявата"
+                                required></textarea>
+
+                            <input type="text" id="contact" class="form-control
+                                mt-4" placeholder="Лице за контакт" required>
+                            <input type="text" id="city" class="form-control
+                                mt-4"
+                                placeholder="Населено място" required>
+                            <input type="text" id="phone_number"
+                                class="form-control
+                                mt-4" placeholder="Телефон за връзка" required>
+                            <input type="email" id="email" class="form-control
+                                mt-4"
+                                placeholder="Имейл адрес" required>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="mt-4">
+                            <input type='file' id="imgInp1" />
+                            <img class="images" id="image1"
+                                src="img/ImagePlaceholder.png"
+                                />
+                        </div>
+
+                        <div class="mt-4">
+                            <input type='file' id="imgInp2" />
+                            <img class="images" id="image2"
+                                src="img/ImagePlaceholder.png"
+                                />
+                        </div>
+
+                        <div class="mt-4">
+                            <input type='file' id="imgInp3" />
+                            <img class="images" id="image3"
+                                src="img/ImagePlaceholder.png"
+                                />
+                        </div>
+
+                        <div class="mt-4">
+                            <input type='file' id="imgInp4" />
+                            <img class="images" id="image4"
+                                src="img/ImagePlaceholder.png"
+                                />
+                        </div>
+                    </div>
+                    <div id="submitButton">
+                        <button class="btn btn-lg btn-success btn-block mt-4
+                            mb-4" type="submit" id="submitForm" form="form1">Добавяне
+                            на
+                            обява</button>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="footer bg-dark">
+            <div class="container text-center">
+                <span class="text-muted">&copy; Buy Sell 2019</span>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="img/images.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://localhost:8012/homework/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>My Form</title>
+    <link rel="stylesheet" href="./My Form_files/style.css">
+
+    <script>
+        function validateForm() {
+            var name = document.forms["myForm"]["name"].value;
+            if (name == "" || name.length > 200) {
+                alert("Името трябва да се попълни и да е по-късо от 200 символа!");
+                return false;
+            }
+            else if (/^[\u0400-\u04FF ]+$/.test(name) == false && /^[A-Za-z ]+$/.test(name) == false) {
+                alert("Името трябва да съдържа само букви от латинската азбука ИЛИ кирилицата и празно място.");
+                return false;
+            }
+
+            var fn = document.forms["myForm"]["fn"].value;
+            fn = Number(fn);
+            if (fn == "" || fn < 62000 || fn > 62999) {
+                alert("Факултетният номер трябва да се попълни и да е между 62000 и 62999!");
+                return false;
+            }
+            else if (/^\d+$/.test(fn) == false) {
+                alert("Факултетният номер може да съдържа само цифри!");
+                return false;
+            }
+
+            var mark = document.forms["myForm"]["mark"].value;
+            markFloat = parseFloat(mark);
+            if (mark == "" || markFloat < 2 || markFloat > 6) {
+                alert("Оценката трябва да се попълни и да е между 2 и 6");
+                return false;
+            }
+            else if (/^\d$/.test(mark) == false && /^\d(\.|\,)\d{1,2}$/.test(mark) == false) {
+                alert("Оценката може да съдържа само цифри, точка или запетая и да е до 2 знака след запетаята!");
+                return false;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form name="myForm" action="http://localhost:8012/homework/server-side.php" ,="" method="POST" onsubmit="return validateForm()">
+        <div class="formTitle">Регистрация</div>
+
+        <div id="formFields">
+            <input type="text" placeholder="Име" name="name" class="inputField"><br>
+            <input type="text" placeholder="Факултетен номер" name="fn" class="inputField"><br>
+            <input type="text" placeholder="Оценка" name="mark" class="inputField"><br>
+
+            <input type="submit" value="Изпрати" class="submitButton">
+        </div>
+    </form>
+
+
+
+</body></html>
