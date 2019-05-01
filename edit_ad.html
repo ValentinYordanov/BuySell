@@ -17,36 +17,34 @@
         <link href="css/sticky-footer.css" rel="stylesheet">
         <link href="css/add_ad.css" rel="stylesheet">
 
-        <title>Buy Sell - Добавяне на обява</title>
+        <title>Buy Sell - Редактиране на обява</title>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/BuySellLogo.png" width="191" height="33" alt=""
-                    class="d-inline-block align-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                              <a class="nav-link" href="add_ad.html">
-                                Добавяне на обява
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                      Профил
-                                    </a>
-                                  </li>
-                          </ul>
-            </div>
-        </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="index.html">
+                      <img src="img/BuySellLogo.png" width="191" height="33" alt="" class="d-inline-block align-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="add_ad.html">Добавяне на обява</a>
+                        </li>
+                        <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Админ меню
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Изтриване на обява</a>
+                                </div>
+                              </div>
+                      </ul>
+                    </div>
+                  </nav>
 
         <main role="main">
             <div class="container">
@@ -54,37 +52,36 @@
                     <div class="col-7">
                         <form class="form-signin" id="form1" runat="server">
                             <input type="text" id="ad_name" class="form-control
-                                mt-4" placeholder="Име на обява" required
+                                mt-4" value="Продавам разтегателен диван" required
                                 autofocus>
                             <input type="text" id="category" class="form-control
-                                mt-4" placeholder="Категория на обявата"
+                                mt-4" value="Домашна мебел"
                                 required>
                             <textarea rows="4" id="description"
                                 class="form-control
-                                mt-4" placeholder="Кратко описание на обявата"
-                                required></textarea>
+                                mt-4"
+                                required>Разтегателен диван модел 020 Единична цена 299 лв Директно от производител Диванът може да бъде изработен в различна разцветка дамаски Доставката се поема от купувача, като ако дестинацията на доставката е извън гр.София, доставката се извършва чрез куриер. Цената на доставка в град София е по договаряне, в зависимост от района на града.</textarea>
 
                                 <input type="text" id="price" class="form-control
-                                mt-4" placeholder="Цена в лева" required>
+                                mt-4" value="299лв." required>
 
                             <input type="text" id="contact" class="form-control
-                                mt-4" placeholder="Лице за контакт" required>
+                                mt-4" value="Иван Иванов" required>
                             <input type="text" id="city" class="form-control
                                 mt-4"
-                                placeholder="Населено място" required>
+                                value="Хасково" required>
                             <input type="text" id="phone_number"
                                 class="form-control
-                                mt-4" placeholder="Телефон за връзка" required>
+                                mt-4" value="0881234567" required>
                             <input type="email" id="email" class="form-control
-                                mt-4"
-                                placeholder="Имейл адрес">
+                                mt-4" value="ivan@abv.bg">
                         </form>
                     </div>
                     <div>
                         <div class="mt-4">
                             <input type='file' id="imgInp1" />
                             <img class="images" id="image1"
-                                src="img/ImagePlaceholder.png"
+                                src="img/sofa.jpg"
                                 />
                         </div>
 
@@ -111,9 +108,7 @@
                     </div>
                     <div id="submitButton">
                         <button class="btn btn-lg btn-success btn-block mt-4
-                            mb-4" type="submit" id="submitForm" form="form1">Добавяне
-                            на
-                            обява</button>
+                            mb-4" type="submit" id="submitForm" form="form1">Обновяване на обява</button>
                     </div>
 
                 </div>
