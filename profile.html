@@ -15,9 +15,9 @@
 
         <!-- Custom styles -->
         <link href="css/sticky-footer.css" rel="stylesheet">
-        <link href="css/add_ad.css" rel="stylesheet">
+        <!-- <link href="css/add_ad.css" rel="stylesheet"> -->
 
-        <title>Buy Sell - Добавяне на обява</title>
+        <title>Buy Sell - Профил</title>
     </head>
 
     <body>
@@ -48,11 +48,10 @@
             </div>
         </nav>
 
-        <main role="main">
-            <div class="container">
+            <div class="container d-xl-flex justify-content-xl-center">
                 <div class="row mt-4">
-                    <div class="col-7">
-                        <form class="form-signin" id="form1" runat="server" action="index_registered.html">
+                    <div class="col-12">
+                        <form class="form-signin" id="index_registered.html" runat="server">
                             <input type="text" id="ad_name" class="form-control
                                 mt-4" placeholder="Име на обява" required
                                 autofocus>
@@ -80,45 +79,13 @@
                                 placeholder="Имейл адрес">
                         </form>
                     </div>
-                    <div>
-                        <div class="mt-4">
-                            <input type='file' id="imgInp1" />
-                            <img class="images" id="image1"
-                                src="img/ImagePlaceholder.png"
-                                />
-                        </div>
-
-                        <div class="mt-4">
-                            <input type='file' id="imgInp2" />
-                            <img class="images" id="image2"
-                                src="img/ImagePlaceholder.png"
-                                />
-                        </div>
-
-                        <div class="mt-4">
-                            <input type='file' id="imgInp3" />
-                            <img class="images" id="image3"
-                                src="img/ImagePlaceholder.png"
-                                />
-                        </div>
-
-                        <div class="mt-4">
-                            <input type='file' id="imgInp4" />
-                            <img class="images" id="image4"
-                                src="img/ImagePlaceholder.png"
-                                />
-                        </div>
-                    </div>
                     <div id="submitButton">
                         <button class="btn btn-lg btn-success btn-block mt-4
-                            mb-4" type="submit" id="submitForm" form="form1">Добавяне
-                            на
-                            обява</button>
+                            mb-4" type="submit" id="submitForm" form="form1">Запазване</button>
                     </div>
 
                 </div>
             </div>
-        </main>
 
 
         <footer class="footer bg-dark">
